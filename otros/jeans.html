@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body id="grilla">
       
     <header class="colorhf centrar">
       <div>
         <ul>
-          <li><a href="/otros/crearcuenta.html">Crear cuenta</a></li>
-          <li><a href="/otros/iniciarsesion.html">Iniciar sesión</a></li>
+          <li><a href="../otros/crearcuenta.html">Crear cuenta</a></li>
+          <li><a href="../otros/iniciarsesion.html">Iniciar sesión</a></li>
         </ul>
       </div>
 
@@ -23,9 +24,9 @@
 
       <div>
         <ul>  
-          <li><a href="/index.html">Inicio</a></li>
-          <li><a href="/otros/comocomprar.html">Cómo comprar</a></li>
-          <li><a href="/otros/contacto.html">Contacto</a></li>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../otros/comocomprar.html">Cómo comprar</a></li>
+          <li><a href="../otros/contacto.html">Contacto</a></li>
         </ul>
       </div>
       
@@ -34,13 +35,29 @@
     <main class="imgfondo">
         <div>Inicio / Jeans</div>
         <h3 class="centrar">JEANS</h3>
-        <div id="grillaFotos">
-            <img src="/assets/jean1.jpeg" class="imagenes foto1">
-            <img src="/assets/jean2.jpeg" class="imagenes foto2">
-            <img src="/assets/jean3.jpeg" class="imagenes foto3">
-            <img src="/assets/jean4.jpeg" class="imagenes foto4">
-            <img src="/assets/jean5.jpeg" class="imagenes foto5">
-            <img src="/assets/jean6.jpeg" class="imagenes foto6">
+        <div class="container animacionFotos">
+          <div class="row">
+            <div class="col">
+              <img src="../assets/jean1.jpeg" class="imagenes foto1">
+            </div>
+            <div class="col">
+              <img src="../assets/jean2.jpeg" class="imagenes foto2">
+            </div>
+            <div class="col">
+              <img src="../assets/jean3.jpeg" class="imagenes foto3">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="../assets/jean4.jpeg" class="imagenes foto4">
+            </div>
+            <div class="col">
+              <img src="../assets/jean5.jpeg" class="imagenes foto5">
+            </div>
+            <div class="col">
+              <img src="../assets/jean6.jpeg" class="imagenes foto6">
+            </div>
+          </div>
         </div>
     </main>
 
@@ -48,15 +65,15 @@
         <article>
           <b>MEDIOS DE PAGO</b>
           <div>
-            <img src="/assets/mc.jpeg" alt="Matercard" class="imagenes2" />
-            <img src="/assets/mp.jpeg" alt="MercadoPago" class="imagenes2" />
-            <img src="/assets/visa.jpeg" alt="Visa" class="imagenes2" />
-            <img src="/assets/efectivo.jpeg" alt="Efectivo" class="imagenes2" />
+            <img src="../assets/mc.jpeg" alt="Matercard" class="imagenes2" />
+            <img src="../assets/mp.jpeg" alt="MercadoPago" class="imagenes2" />
+            <img src="../assets/visa.jpeg" alt="Visa" class="imagenes2" />
+            <img src="../assets/efectivo.jpeg" alt="Efectivo" class="imagenes2" />
           </div>
           <b>MEDIOS DE ENVÍO</b>
           <div>
-              <img src="/assets/correoarg.jpeg" alt="Correo Argentino" class="imagenes2" />
-              <img src="/assets/envios.jpeg" alt="Envíos" class="imagenes2" />
+              <img src="../assets/correoarg.jpeg" alt="Correo Argentino" class="imagenes2" />
+              <img src="../assets/envios.jpeg" alt="Envíos" class="imagenes2" />
           </div>
         </article>
         <article class="contacto hijo">
@@ -67,6 +84,6 @@
           <div>Instagram: divaclothing.ar</div>
         </article>
       </footer>
-
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
