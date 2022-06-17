@@ -1,0 +1,110 @@
+*{
+    margin: 0px; 
+    padding: 0px;
+    font-family: 'Akshar', sans-serif;
+}
+
+@import "./parciales/header";
+@import "./parciales/main";
+@import "./parciales/footer";
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100%;
+}
+
+#grillaFotos{
+    display: grid;
+    grid-template-areas:
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6";
+    grid-column-gap: 00.5rem;
+    grid-row-gap: 0.5rem;
+}
+
+.foto1{
+    grid-area: foto1;
+}
+
+.foto2{
+    grid-area: foto2;
+    
+}
+.foto3{
+    grid-area: foto3;
+}
+
+.foto4{
+    grid-area: foto4;
+}
+
+.foto5{
+    grid-area: foto5;
+}
+
+.foto6{
+    grid-area: foto6;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1324px){
+    #grilla{
+        grid-template-areas: "header"
+                            "main"
+                            "footer";
+        grid-template-rows: auto auto auto;
+    }
+
+    #grillaFotos{
+        display: grid;
+        grid-template-areas: 
+        "foto1 foto2"
+        "foto3 foto4"
+        "foto5 foto6";   
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    #grilla{
+        grid-template-areas: "header"
+                            "main"
+                            "footer";
+        grid-template-rows: auto auto auto;
+    }
+
+    .imagenes{
+        height: 22rem;
+        width: 16rem;
+    }
+
+    #grillaFotos{
+        display: grid;
+        grid-template-areas: 
+        "foto1"
+        "foto2"
+        "foto3"
+        "foto4"
+        "foto5"
+        "foto6";   
+    }
+
+}
+
+/*keyframes y transitions*/
+
+body header div ul li{
+    transition: 0.5s;
+}
+
+body header div ul li:hover{
+     background-color: black;
+ }  
+
+
