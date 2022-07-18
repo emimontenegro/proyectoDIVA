@@ -237,7 +237,11 @@ footer{
     @extend .colorletra
 }
 .colorletra{
-    color: blue;
+    color: black;
+}
+
+@mixin fondoRojo{
+    background-color: tomato;
 }
 
 
